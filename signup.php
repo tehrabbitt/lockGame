@@ -6,13 +6,15 @@
 <tr style="height: 100.266px;">
 <td style="width: 187px; height: 100.266px;">
 <form action="register.php" method="post">
-<p>Handle:<br /> <input name="handle" type="text" /><br /><br /> 
-  Difficulty Level:<br /> 
-  <input checked="checked" name="difficulty" type="radio" value="1" /> Easy<br /> 
-  <input name="difficulty" type="radio" value="2" /> Medium<br /> 
-  <input name="difficulty" type="radio" value="3" /> Hard</p>
-  <input name="difficulty" type="radio" value="4" /> <font color="red">Expert</font></p>
-<p><input type="submit" value="Print Barcode" /></p>
+<br />
+<p align = "center"><b>Handle:</b><br /> <input name="handle" type="text" /><br /><br />
+  <b>Difficulty Level:</b><br /></p>
+  <p align = "left">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input checked="checked" name="difficulty" type="radio" value="1" /> Easy<br /> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="difficulty" type="radio" value="2" /> Medium<br /> 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="difficulty" type="radio" value="3" /> Hard <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="difficulty" type="radio" value="4" /> <font color="red">Expert</font></p>
+<p align = "center"><input type="submit" value="Print Barcode"/></p>
 </form></td>
 </tr>
 </tbody>
