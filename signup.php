@@ -5,7 +5,7 @@
 <tbody>
 <tr style="height: 100.266px;">
 <td style="width: 187px; height: 100.266px;">
-<form action="/register.php" method="post">
+<form action="register.php" method="post">
 <p>Handle:<br /> <input name="handle" type="text" /><br /><br /> 
   Difficulty Level:<br /> 
   <input checked="checked" name="difficulty" type="radio" value="1" /> Easy<br /> 

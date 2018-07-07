@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $dbname = "lockGame";
-$user = "root";
-$pass = "";
+$user = "gameUser";
+$pass = "69wwNI3WXfyzr4gm";
 $charset = "UTF8MB4"; // if your db does not use CHARSET=UTF8MB4, you should probably be fixing that
 $dsn = "mysql:host={$host};dbname={$dbname};charset={$charset}";
 $options = [
