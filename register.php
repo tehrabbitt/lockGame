@@ -1,5 +1,4 @@
 <?php
-
 $db = require __DIR__ . '/db_conn.php';
 $code = md5(uniqid());
 
@@ -11,5 +10,10 @@ function registerUser($db, $bcode, $handle, $difficulty){
 
 registerUser($db, $code, htmlspecialchars($_POST["handle"]) , htmlspecialchars($_POST["difficulty"]));
 
-echo "User has been added with barcode: ", $code;
+
+// echo "User has been added with barcode: ", $code;
+
+    echo ("<body onload=window.print() />");
+    echo ("<br><br><br><br><br>");
+    echo ("<img src=codePrint.php?bctext=$code> </img>");
 ?>
