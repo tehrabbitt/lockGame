@@ -23,14 +23,20 @@ function setStart($bcode){
   $select->execute($barcodeIn);
   return $loadTime;
 }
-function setStop($bcode){
 
-
+function startGame($bcode){
+  $db = require __DIR__ . '/db_conn.php';
+  $loadTime = time();
+  $query = "UPDATE scores SET inprogress = '1'  WHERE barcode= :bar";
+  $select = $db->prepare($query);
+  $barcodeIn = ['bar' => $bcode];
+  $select->execute($barcodeIn);
 }
 
 
 $user = getUser($_GET['code']);
 setStart($_GET['code']);
+startGame($_GET['code']);
 if ($user === false) {header('Location:error.php'); }
 echo "<div style='text-align:center'>";
 echo "<font size='25'><h1> Contestant Information:</h1></font>";
