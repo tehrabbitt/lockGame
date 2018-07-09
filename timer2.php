@@ -1,5 +1,4 @@
 <?php
-touch ("inProgress.lock");
 if (empty($_GET['code'])) { 
 header('Location:error.php'); }
 
@@ -47,7 +46,7 @@ echo "<font size='25'><h1>";
 require __DIR__ . '/counter.php';
 echo "</h1></font>";
 
-
+echo "<iframe frameborder='0' src='checkEnd.php?code=" . $_GET['code'] . "'></iframe>";
 
 ?>
 
